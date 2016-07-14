@@ -1,0 +1,891 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" ng-controller="LayoutCtrl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{siteName}</title>
+   
+    <link href="../../../packagsConseg/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../packagsConseg/css/estilo.css" rel="stylesheet" />
+    <link href="../../../plugins/bootstrapswitch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* ========================================================================
+ * bootstrap-switch - v3.3.2
+ * http://www.bootstrap-switch.org
+ * ========================================================================
+ * Copyright 2012-2013 Mattia Larentis
+ *
+ * ========================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================================
+ */
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap-switch {
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  line-height: 8px;
+  z-index: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.bootstrap-switch .bootstrap-switch-container {
+  display: inline-block;
+  top: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block !important;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+  text-align: center;
+  z-index: 1;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #005fcc;
+  background-image: -moz-linear-gradient(top, #0044cc, #0088cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0044cc), to(#0088cc));
+  background-image: -webkit-linear-gradient(top, #0044cc, #0088cc);
+  background-image: -o-linear-gradient(top, #0044cc, #0088cc);
+  background-image: linear-gradient(to bottom, #0044cc, #0088cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0044cc', endColorstr='#ff0088cc', GradientType=0);
+  border-color: #0088cc #0088cc #005580;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0088cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary:hover,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary:focus,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary:focus,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary.active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary.disabled,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary.disabled,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary[disabled],
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary[disabled] {
+  color: #ffffff;
+  background-color: #0088cc;
+  *background-color: #0077b3;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary.active {
+  background-color: #006699 \9;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #41a7c5;
+  background-image: -moz-linear-gradient(top, #2f96b4, #5bc0de);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2f96b4), to(#5bc0de));
+  background-image: -webkit-linear-gradient(top, #2f96b4, #5bc0de);
+  background-image: -o-linear-gradient(top, #2f96b4, #5bc0de);
+  background-image: linear-gradient(to bottom, #2f96b4, #5bc0de);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2f96b4', endColorstr='#ff5bc0de', GradientType=0);
+  border-color: #5bc0de #5bc0de #28a1c5;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #5bc0de;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info:hover,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info:focus,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info:focus,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info.active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info.disabled,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info.disabled,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info[disabled],
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info[disabled] {
+  color: #ffffff;
+  background-color: #5bc0de;
+  *background-color: #46b8da;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info.active {
+  background-color: #31b0d5 \9;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #58b058;
+  background-image: -moz-linear-gradient(top, #51a351, #62c462);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#51a351), to(#62c462));
+  background-image: -webkit-linear-gradient(top, #51a351, #62c462);
+  background-image: -o-linear-gradient(top, #51a351, #62c462);
+  background-image: linear-gradient(to bottom, #51a351, #62c462);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff51a351', endColorstr='#ff62c462', GradientType=0);
+  border-color: #62c462 #62c462 #3b9e3b;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #62c462;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success:hover,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success:focus,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success:focus,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success.active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success.disabled,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success.disabled,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success[disabled],
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success[disabled] {
+  color: #ffffff;
+  background-color: #62c462;
+  *background-color: #4fbd4f;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success.active {
+  background-color: #42b142 \9;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f9a123;
+  background-image: -moz-linear-gradient(top, #f89406, #fbb450);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f89406), to(#fbb450));
+  background-image: -webkit-linear-gradient(top, #f89406, #fbb450);
+  background-image: -o-linear-gradient(top, #f89406, #fbb450);
+  background-image: linear-gradient(to bottom, #f89406, #fbb450);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff89406', endColorstr='#fffbb450', GradientType=0);
+  border-color: #fbb450 #fbb450 #f89406;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #fbb450;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning:hover,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning:focus,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning:focus,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning.active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning.disabled,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning.disabled,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning[disabled],
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning[disabled] {
+  color: #ffffff;
+  background-color: #fbb450;
+  *background-color: #faa937;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning.active {
+  background-color: #fa9f1e \9;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d14641;
+  background-image: -moz-linear-gradient(top, #bd362f, #ee5f5b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bd362f), to(#ee5f5b));
+  background-image: -webkit-linear-gradient(top, #bd362f, #ee5f5b);
+  background-image: -o-linear-gradient(top, #bd362f, #ee5f5b);
+  background-image: linear-gradient(to bottom, #bd362f, #ee5f5b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbd362f', endColorstr='#ffee5f5b', GradientType=0);
+  border-color: #ee5f5b #ee5f5b #e51d18;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ee5f5b;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger:hover,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger:focus,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger:focus,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger.active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger.disabled,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger.disabled,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger[disabled],
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger[disabled] {
+  color: #ffffff;
+  background-color: #ee5f5b;
+  *background-color: #ec4844;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger.active {
+  background-color: #e9322d \9;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f0f0f0;
+  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: linear-gradient(to bottom, #e6e6e6, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe6e6e6', endColorstr='#ffffffff', GradientType=0);
+  border-color: #ffffff #ffffff #d9d9d9;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ffffff;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default:hover,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default:focus,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default:focus,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default.active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default.disabled,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default.disabled,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default[disabled],
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default[disabled] {
+  color: #333333;
+  background-color: #ffffff;
+  *background-color: #f2f2f2;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default:active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default:active,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default.active,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default.active {
+  background-color: #e6e6e6 \9;
+}
+.bootstrap-switch .bootstrap-switch-label {
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  z-index: 100;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  color: #333333;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.bootstrap-switch .bootstrap-switch-label:hover,
+.bootstrap-switch .bootstrap-switch-label:focus,
+.bootstrap-switch .bootstrap-switch-label:active,
+.bootstrap-switch .bootstrap-switch-label.active,
+.bootstrap-switch .bootstrap-switch-label.disabled,
+.bootstrap-switch .bootstrap-switch-label[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.bootstrap-switch .bootstrap-switch-label:active,
+.bootstrap-switch .bootstrap-switch-label.active {
+  background-color: #cccccc \9;
+}
+.bootstrap-switch .bootstrap-switch-handle-on {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.bootstrap-switch .bootstrap-switch-handle-off {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.bootstrap-switch input[type='radio'],
+.bootstrap-switch input[type='checkbox'] {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: -1;
+}
+.bootstrap-switch input[type='radio'].form-control,
+.bootstrap-switch input[type='checkbox'].form-control {
+  height: auto;
+}
+.bootstrap-switch.bootstrap-switch-mini {
+  min-width: 71px;
+}
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-label {
+  padding: 3px 6px;
+  font-size: 10px;
+  line-height: 9px;
+}
+.bootstrap-switch.bootstrap-switch-small {
+  min-width: 79px;
+}
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-label {
+  padding: 3px 6px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.bootstrap-switch.bootstrap-switch-large {
+  min-width: 120px;
+}
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label {
+  padding: 9px 12px;
+  font-size: 16px;
+  line-height: normal;
+}
+.bootstrap-switch.bootstrap-switch-disabled,
+.bootstrap-switch.bootstrap-switch-readonly,
+.bootstrap-switch.bootstrap-switch-indeterminate {
+  cursor: default !important;
+}
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default !important;
+}
+.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-on {
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-off {
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.bootstrap-switch.bootstrap-switch-focused {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82, 168, 236, .6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82, 168, 236, .6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82, 168, 236, .6);
+}
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-off .bootstrap-switch-label {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+    </style>
+
+      
+</head>
+<body lang="en">
+    
+   
+
+    <header>
+        <!--<div class="navbar ">-->
+            <div class="painel">
+                <div class="row">
+                    <div class="col col-md-12 text-right">
+                        <ul class="breadcrumb dropdown-menu">
+                            <li><a href="{{model.logoutUrl}}">Logout</a></li>
+                            <li class="divider" ng-show="model.loginWithDifferentAccountUrl"></li>
+                            <li><a href="{{model.loginWithDifferentAccountUrl}}" ng-show="model.loginWithDifferentAccountUrl">Login With Different Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row marginbottom1">
+                        <div class="col-xs-5 col-sm-2 col-md-1 margintop2">
+                            <a href="entrada.html">
+                                <img src="../../../packagsConseg/img/logo_conseg.png" alt="logomarca">
+                            </a>
+                        </div>
+                        <div class="col-xs-7 hidden-xs col-sm-8 col-md-8 margintop2">
+                            <div class="textologo floatleft">CONSEG</div>
+                            <div class="textosecretaria">&nbsp;SECRETARIA DA SEGURANÇA PÚBLICA</div>
+                            <div class="textoconseg">&nbsp;COORDENADORIA ESTADUAL DOS CONSELHOS COMUNITÁRIOS DE SEGURANÇA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-header">
+                <!--<span class="navbar-brand">{siteName}</span>-->
+            </div>
+            <ul class="nav navbar-nav" ng-show="model.currentUser" ng-cloak>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{model.currentUser}} <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{model.logoutUrl}}">Logout</a></li>
+                        <li class="divider" ng-show="model.loginWithDifferentAccountUrl"></li>
+                        <li><a href="{{model.loginWithDifferentAccountUrl}}" ng-show="model.loginWithDifferentAccountUrl">Login With Different Account</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="page-header">
+            <!--<h1>
+                This is a custom view
+                <small ng-show="clientName"><strong>{clientName}</strong> is asking you to login</small>
+            </h1>-->
+        </div>
+    </div>
+    
+    <main>
+        <div class='container page-login' ng-cloak>
+            <!--<div class="page-header">
+                <h1>Login</h1>
+            </div>-->
+
+            <div class="row" ng-show="model.errorMessage">
+                <div class="col-md-12 col-sm-12">
+                    <div class="alert alert-danger">
+                        <strong>Error:</strong>
+                        {{model.errorMessage}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6"  ng-show="model.loginUrl">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Local Login</h3>
+                        </div>
+                        <div class="panel-body" style="float:left !important;width:550px !important">
+                            <form name="form" method="post" action="{{model.loginUrl}}">
+                                <anti-forgery-token token="model.antiForgery"></anti-forgery-token>
+
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <label for="username">Usuário</label>
+                                        <input required name="username" autofocus id="username" type="text" class="form-control" placeholder="Usuário" ng-model="model.username" maxlength="100">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Senha</label>
+                                        <input required id="password" name="password" type="password" class="form-control" placeholder="Senha" ng-model="model.password" maxlength="100" autocomplete="off">
+                                    </div>
+
+                                    <!--<div class="form-group">
+                                        <label for="ConfirmePassword">Confirme Password</label>
+                                        <input required id="ConfirmePassword" name="ConfirmePassword" type="password" class="form-control" placeholder="Confirme Password" ng-model="model.ConfirmePassword" maxlength="100" autocomplete="off">
+                                    </div>-->
+
+                                    <div class="form-group login-remember" ng-show="model.allowRememberMe">
+                                        <label for="rememberMe">
+                                            <input type="checkbox" id="rememberMe" name="rememberMe" ng-model="model.rememberMe" value="true">
+                                            <strong>Lembrar meu login</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button ng-click="Login()" class="btn btn-primary" ng-disabled="form.$invalid">Login</button>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li ng-repeat="link in model.additionalLinks"><a ng-href="{{link.href}}">{{link.text}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 external-providers" ng-show="model.externalProviders">
+                    <div class="panel panel-default" style="float:left !important;width:550px !important">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Servidor de Autenticação Consegs</h3>
+                        </div>
+                        <div class="panel-body">                                                    
+
+
+                           <ul class="list-inline">
+                                <div class="form-group">  
+                                    
+                                   <!-- <button ng-click="Login()" class="btn btn-primary" ng-disabled="form.$invalid">Solicitação de Acessos</button>-->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Solicitação de Acessos</button>
+                                                   
+                               <!--<li ng-repeat="provider in model.externalProviders">
+                                    <a class="btn btn-default" href="{{provider.href}}">{{provider.text}}</a>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!--Modal--> 
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Pedido de Solicitação de Acessos</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-group" style="display:inline-flex">
+
+                        <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                            <strong>Administracao</strong>
+                            <div>
+                                <input type="checkbox" checked>
+                            </div>
+                        </div>
+
+                        <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                            <strong>Sivic</strong>
+                            <div>
+                                <input type="checkbox" checked>
+                            </div>
+                        </div>
+
+                        <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                            <strong>Area Restrita</strong>
+                            <div>
+                                <input type="checkbox" checked>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" class="form-control" ng-model="model.NomeU" name="nome" placeholder="Insira o nome completo.." value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="username">E-mail</label>
+                        <input type="text" class="form-control" ng-model="model.email" name="nome" placeholder="Insira seu  email.." value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Superior</label>
+                        <input type="text" class="form-control" ng-model="model.Superior" name="nome" placeholder="Insira o nome do usuario" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Departamento</label>
+                        <input type="text" class="form-control" ng-model="model.Departamento" name="nome" placeholder="Insira o nome do usuario" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Circunscrição</label>
+                        <input type="text" class="form-control" ng-model="model.Departamento" placeholder="Insira o nome do usuario" value="" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" ng-click="Enviar()" class="btn btn-primary" data-dismiss="modal">Enviar Solicitação</button>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+    
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <img src="../../../packagsConseg/img/gti.png" alt="GTI">
+                &nbsp;&nbsp; Secretaria de Estado da Segurança Pública - Rua Libero Badaró, 39, Centro, SP - CEP: 01009-000 - seguranca@sp.gov.br
+            </div>
+        </div>
+    </footer>
+
+    <script id='modelJson' type='application/json'>
+        {model}
+    </script>
+   
+    
+    <script src="/Services/content/libs/jquery/jquery-1.11.0.min.js"></script>
+    <script src="/Services/content/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Services/content/libs/angular/angular.1.2.13.min.js"></script>
+    <script src="../libs/bootstrap/js/ui-bootstrap-tpls-1.3.3.min.js"></script>
+    <script src="/Services/content/libs/encoder/encoder.min.js"></script>
+  
+    <script src="../../../plugins/bootstrapswitch/docs/js/highlight.js"></script>
+    <script src="../../../plugins/bootstrapswitch/dist/js/bootstrap-switch.js"></script>
+    <script src="../../../plugins/bootstrapswitch/docs/js/main.js"></script>
+
+    <script>
+                        $(document).ready(function() {
+                          $('[type="checkbox"]').bootstrapSwitch();
+                        })
+    </script>
+
+    <script src="/Services/content/app/app.js"></script>
+   
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html ng-app="app" ng-controller="LayoutCtrl">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{siteName}</title>
+    <link href="/Services/Content/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Services/Content/app/app.css" rel="stylesheet">
+</head>
+<body lang="en">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <span class="navbar-brand">{siteName}</span>
+        </div>
+        <ul class="nav navbar-nav" ng-show="model.currentUser" ng-cloak>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{model.currentUser}} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{model.logoutUrl}}">Logout</a></li>
+                    <li class="divider" ng-show="model.loginWithDifferentAccountUrl"></li>
+                    <li><a href="{{model.loginWithDifferentAccountUrl}}" ng-show="model.loginWithDifferentAccountUrl">Login With Different Account</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h1>
+                This is a custom view
+                <small ng-show="clientName"><strong>{clientName}</strong> is asking you to login</small>
+            </h1>
+        </div>
+    </div>
+
+    <div class='container page-login' ng-cloak>
+        <div class="page-header">
+            <h1>Login</h1>
+        </div>
+        <div class="row" ng-show="model.errorMessage">
+            <div class="col-md-12 col-sm-12">
+                <div class="alert alert-danger">
+                    <strong>Error:</strong>
+                    {{model.errorMessage}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6" ng-show="model.loginUrl">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Local Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form name="form" method="post" action="{{model.loginUrl}}">
+                            <anti-forgery-token token="model.antiForgery"></anti-forgery-token>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input required name="username" autofocus id="username" type="text" class="form-control" placeholder="Username" ng-model="model.username" maxlength="100">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input required id="password" name="password" type="password" class="form-control" placeholder="Password" ng-model="model.password" maxlength="100" autocomplete="off">
+                                </div>
+                                <div class="form-group login-remember" ng-show="model.allowRememberMe">
+                                    <label for="rememberMe">
+                                        <input type="checkbox" id="rememberMe" name="rememberMe" ng-model="model.rememberMe" value="true">
+                                        <strong>Remember My Login</strong>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary" ng-disabled="form.$invalid">Login</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li ng-repeat="link in model.additionalLinks"><a ng-href="{{link.href}}">{{link.text}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 external-providers" ng-show="model.externalProviders">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">External Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-inline">
+                            <li ng-repeat="provider in model.externalProviders">
+                                <a class="btn btn-default" href="{{provider.href}}">{{provider.text}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id='modelJson' type='application/json'>
+        {model}
+    </script>
+    <script src="/Services/Content/libs/jquery/jquery-1.11.0.min.js"></script>
+    <script src="/Services/Content/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Services/Content/libs/angular/angular.1.2.13.min.js"></script>
+    <script src="/Services/Content/libs/encoder/encoder.min.js"></script>
+    <script src="/Services/Content/app/app.js"></script>
+</body>
+</html>-->
+
