@@ -27,10 +27,16 @@ namespace ConsegAutenticationService.Services
             var name = client != null ? client.ClientName : null;
             return await Render(model, "login", name);
         }
+     
 
         public Task<Stream> Logout(LogoutViewModel model, SignOutMessage message)
         {
             return Render(model, "logout");
+        }
+
+        public Task<Stream> WelCome(Models.WelCome model, SignOutMessage message)
+        {
+            return Render(model, "WelCome");
         }
 
         public Task<Stream> LoggedOut(LoggedOutViewModel model, SignOutMessage message)

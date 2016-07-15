@@ -659,14 +659,15 @@
 
 
                            <ul class="list-inline">
-                                <div class="form-group">  
-                                    
+                                <div class="form-group">
                                    <!-- <button ng-click="Login()" class="btn btn-primary" ng-disabled="form.$invalid">Solicitação de Acessos</button>-->
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Solicitação de Acessos</button>
-                                                   
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BuscaModal">Busca Usuarios Conseg</button>          
                                <!--<li ng-repeat="provider in model.externalProviders">
                                     <a class="btn btn-default" href="{{provider.href}}">{{provider.text}}</a>
+
                                 </li>-->
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -676,6 +677,172 @@
     </main>
 
      <!--Modal--> 
+
+    <div id="BuscaModal" class="modal fade" role="dialog" >
+        <div class="modal-dialog modal-lg">
+           
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">                   
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sistema de Busca de Usuarios Consegs</h4>
+                </div>
+
+                <div class="modal-body">
+                     <div class="form-group">
+                        <a href="#demo"  class="btn btn-primary" data-toggle="collapse">Persquisa</a>
+                        <a href="#demo1" class="btn btn-primary" data-toggle="collapse">Credenciais</a>
+                        <a href="#demo2" class="btn btn-primary" data-toggle="collapse">Sistemas</a>
+                        <a href="#demo3" class="btn btn-primary" data-toggle="collapse" >Tabela de Usuarios</a>
+                        <br /><hr />
+                            <div id="demo" class="collapse">
+                                <div class="form-group">
+                                    <label for="usuarioForm">Usuário</label>
+                                    <input type="text" id="usuarioForm" class="form-control" ng-model="model.NomeU" name="usuarioForm" placeholder="Insira o nome completo.." value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailForm">E-mail</label>
+                                    <input type="text" id="emailForm" class="form-control" ng-model="model.email" name="emailForm" placeholder="Insira seu  email.." value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="superiorForm">Superior</label>
+                                    <input type="text" id="superiorForm" class="form-control" ng-model="model.Superior" name="superiorForm" placeholder="Insira o nome do usuario" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="departamentoForm">Departamento</label>
+                                    <input type="text" id="departamentoForm" class="form-control" ng-model="model.Departamento" name="departamentoForm" placeholder="Insira o nome do usuario" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="circunscricaoForm">Circunscrição</label>
+                                    <input type="text" id="circunscricaoForm" class="form-control" name="circunscricaoForm" ng-model="model.Departamento" placeholder="Insira o nome do usuario" value="" />
+                                </div>
+                            </div>
+                            <div id="demo1" class="collapse">
+                                <div class="form-group">
+                                    <label for="usuarioForm">Usuário</label>
+                                    <input type="text" id="usuarioForm" class="form-control" ng-model="model.NomeU" name="usuarioForm" placeholder="Insira o nome completo.." value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailForm">E-mail</label>
+                                    <input type="text" id="emailForm" class="form-control" ng-model="model.email" name="emailForm" placeholder="Insira seu  email.." value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="superiorForm">Superior</label>
+                                    <input type="text" id="superiorForm" class="form-control" ng-model="model.Superior" name="superiorForm" placeholder="Insira o nome do usuario" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="departamentoForm">Departamento</label>
+                                    <input type="text" id="departamentoForm" class="form-control" ng-model="model.Departamento" name="departamentoForm" placeholder="Insira o nome do usuario" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="circunscricaoForm">Circunscrição</label>
+                                    <input type="text" id="circunscricaoForm" class="form-control" name="circunscricaoForm" ng-model="model.Departamento" placeholder="Insira o nome do usuario" value="" />
+                                </div>
+                            </div>
+                            <div id="demo2" class="collapse">
+                                <div class="form-group" style="display:inline-flex">
+
+                                    <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                                        <strong>Administracao</strong>
+                                        <div>
+                                            <input id="admin" type="checkbox" name="admin" checked>
+                                        </div>
+                                    </div>
+
+                                    <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                                        <strong>Sivic</strong>
+                                        <div>
+                                            <input id="sivic" type="checkbox" name="sivic">
+                                        </div>
+                                    </div>
+
+                                    <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                                        <strong>Area Restrita</strong>
+                                        <div>
+                                            <input id="area" type="checkbox" name="area">
+                                        </div>
+                                    </div>
+
+                                    <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                                        <strong>Portal</strong>
+                                        <div>
+                                            <input id="portal" type="checkbox" name="portal">
+                                        </div>
+                                    </div>
+                                    <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
+                                        <strong>Ouvidoria</strong>
+                                        <div>
+                                            <input id="ouvidoria" type="checkbox" name="ouvidoria">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="demo3" class="collapse">
+                                <!--<div class="container">-->
+                                    <h2>Usuarios Consegs</h2>
+                                    <p>Lista de usuarios consegs</p>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Firstname</th>
+                                                <!--<th>Lastname</th>
+                                                <th>Email</th>-->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>John</td>
+                                                <!--<td>Doe</td>
+                                                <td>john@example.com</td>-->
+                                            </tr>
+                                            <tr>
+                                                <td>Mary</td>
+                                                <!--<td>Moe</td>
+                                                <td>mary@example.com</td>-->
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <!--<td>Dooley</td>
+                                                <td>july@example.com</td>-->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                <!--</div>-->
+                            </div>
+                         </div>   
+                                  
+                        <!--<div class="form-group">
+                            <label for="usuarioForm">Usuário</label>
+                            <input type="text" id="usuarioForm" class="form-control" ng-model="model.NomeU" name="usuarioForm" placeholder="Insira o nome completo.." value="" />
+                        </div>
+                        <div class="form-group">
+                            <label for="emailForm">E-mail</label>
+                            <input type="text" id="emailForm" class="form-control" ng-model="model.email" name="emailForm" placeholder="Insira seu  email.." value="" />
+                        </div>
+                        <div class="form-group">
+                            <label for="superiorForm">Superior</label>
+                            <input type="text" id="superiorForm" class="form-control" ng-model="model.Superior" name="superiorForm" placeholder="Insira o nome do usuario" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label for="departamentoForm">Departamento</label>
+                            <input type="text" id="departamentoForm" class="form-control" ng-model="model.Departamento" name="departamentoForm" placeholder="Insira o nome do usuario" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label for="circunscricaoForm">Circunscrição</label>
+                            <input type="text" id="circunscricaoForm" class="form-control" name="circunscricaoForm" ng-model="model.Departamento" placeholder="Insira o nome do usuario" value="" />
+                        </div>-->
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button onclick="SolicitacaoAccess()" class="btn btn-primary" data-dismiss="modal">Pesquisar</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -692,57 +859,58 @@
                         <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
                             <strong>Administracao</strong>
                             <div>
-                                <input type="checkbox" checked>
+                                <input id="admin" type="checkbox" name="admin" checked>
                             </div>
                         </div>
 
                         <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
                             <strong>Sivic</strong>
                             <div>
-                                <input type="checkbox" checked>
+                                <input id="sivic" type="checkbox" name="sivic" checked>
                             </div>
                         </div>
 
                         <div style="float: none;position: relative;padding: 0px 10px;text-align: center;">
                             <strong>Area Restrita</strong>
                             <div>
-                                <input type="checkbox" checked>
+                                <input id="area" type="checkbox" name="area" checked>
                             </div>
                         </div>
 
                     </div>
 
                     <div class="form-group">
-                        <label for="username">Usuário</label>
-                        <input type="text" class="form-control" ng-model="model.NomeU" name="nome" placeholder="Insira o nome completo.." value="" />
+                        <label for="usuarioForm">Usuário</label>
+                        <input type="text" id="usuarioForm" class="form-control" ng-model="model.NomeU" name="usuarioForm" placeholder="Insira o nome completo.." value="" />
                     </div>
                     <div class="form-group">
-                        <label for="username">E-mail</label>
-                        <input type="text" class="form-control" ng-model="model.email" name="nome" placeholder="Insira seu  email.." value="" />
+                        <label for="emailForm">E-mail</label>
+                        <input type="text" id="emailForm" class="form-control" ng-model="model.email" name="emailForm" placeholder="Insira seu  email.." value="" />
                     </div>
                     <div class="form-group">
-                        <label for="username">Superior</label>
-                        <input type="text" class="form-control" ng-model="model.Superior" name="nome" placeholder="Insira o nome do usuario" value="" />
+                        <label for="superiorForm">Superior</label>
+                        <input type="text" id="superiorForm" class="form-control" ng-model="model.Superior" name="superiorForm" placeholder="Insira o nome do usuario" value="" />
                     </div>
                     <div class="form-group">
-                        <label for="username">Departamento</label>
-                        <input type="text" class="form-control" ng-model="model.Departamento" name="nome" placeholder="Insira o nome do usuario" value="" />
+                        <label for="departamentoForm">Departamento</label>
+                        <input type="text" id="departamentoForm" class="form-control" ng-model="model.Departamento" name="departamentoForm" placeholder="Insira o nome do usuario" value="" />
                     </div>
                     <div class="form-group">
-                        <label for="username">Circunscrição</label>
-                        <input type="text" class="form-control" ng-model="model.Departamento" placeholder="Insira o nome do usuario" value="" />
+                        <label for="circunscricaoForm">Circunscrição</label>
+                        <input type="text" id="circunscricaoForm" class="form-control" name="circunscricaoForm" ng-model="model.Departamento" placeholder="Insira o nome do usuario" value="" />
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    <button type="button" ng-click="Enviar()" class="btn btn-primary" data-dismiss="modal">Enviar Solicitação</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>   
+                    <button onclick="SolicitacaoAccess()" class="btn btn-primary" data-dismiss="modal">Enviar Solicitação</button>
+                   
                 </div>
             </div>
 
         </div>
     </div>  
     
-    </div>
+    <!--</div>-->
 
 
     <footer>
@@ -770,9 +938,30 @@
     <script src="../../../plugins/bootstrapswitch/docs/js/main.js"></script>
 
     <script>
-                        $(document).ready(function() {
-                          $('[type="checkbox"]').bootstrapSwitch();
-                        })
+        $(document).ready(function () {
+            $('[type="checkbox"]').bootstrapSwitch();
+        });
+
+       
+        function SolicitacaoAccess()
+        {
+            
+            var Cadastro = {            
+                "Nome": $("#usuarioForm").val(),
+                "Email": $("#emailForm").val(),
+                "Superior": $("#superiorForm").val(),
+                "Departamento": $("#departamentoForm").val(),
+                "Circunscricao": $("#circunscricaoForm").val(),
+
+                "admin": $('input[name="admin"]').bootstrapSwitch('state'),
+                "sivic": $('input[name="sivic"]').bootstrapSwitch('state'),
+                "area": $('input[name="area"]').bootstrapSwitch('state')
+            }
+            alert(Cadastro);
+        }
+
+      
+
     </script>
 
     <script src="/Services/content/app/app.js"></script>

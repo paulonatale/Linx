@@ -53,6 +53,7 @@ using System.Web.Http;
 using IdentityServer3.Core.Logging;
 using IdentityServer3.EntityFramework;
 using IdentityServer3.Core.Services.Default;
+using ConsegAutenticationService.Services;
 
 [assembly: OwinStartup(typeof(ConsegAutenticationService.Startup))]
 
@@ -73,18 +74,21 @@ namespace ConsegAutenticationService
 
 
             //var viewOptions = new DefaultViewServiceOptions();
-            //viewOptions.Stylesheets.Add("/Content/Site.css");
-            //viewOptions.Stylesheets.Add("/Content/Site.css");
-            //viewOptions.Stylesheets.Add("/Content/Site.css");
-            //viewOptions.Stylesheets.Add("/Content/Site.css");
-            //viewOptions.Stylesheets.Add("/Content/Site.css");
-            //viewOptions.Scripts.Add("/Content/Site.css");
-            //viewOptions.Scripts.Add("/Content/Site.css");
-            //viewOptions.Scripts.Add("/Content/Site.css");
-            //viewOptions.Scripts.Add("/Content/Site.css");
-
-
+            //viewOptions.CustomViewDirectory = "/Services/DefaultViewService/PageAssets";
+            //viewOptions.CacheViews = false;
             //factory.ConfigureDefaultViewService(viewOptions);
+
+
+
+            //viewOptions.Stylesheets.Add("/Content/Site.css");
+            //viewOptions.Stylesheets.Add("/Content/Site.css");
+            //viewOptions.Stylesheets.Add("/Content/Site.css");
+            //viewOptions.Stylesheets.Add("/Content/Site.css");
+            //viewOptions.Scripts.Add("/Content/Site.css");
+            //viewOptions.Scripts.Add("/Content/Site.css");
+            //viewOptions.Scripts.Add("/Content/Site.css");
+
+
 
             // configuração adicionada para criação de banco e relacionamento
             //var efConfg = new EntityFrameworkServiceOptions
@@ -94,13 +98,13 @@ namespace ConsegAutenticationService
 
             //factory.RegisterConfigurationServices(efConfg);
             //factory.RegisterConfigurationServices(efConfg);
-
+           
             factory.ViewService = new Registration<IViewService, Services.CustomViewService>();
-
             factory.UserService = new Registration<IUserService, Services.UserService>();
 
             var options = new IdentityServerOptions
             {               
+                //EnableWelcomePage = false,
                 SiteName = "Servidor de Autenticação SSP",
                 SigningCertificate = Confg.CertificateLoad.Get(), /*new X509Certificate2(Certificate, ConfigurationManager.AppSettings["SigningCertificatePassword"]),*/
                 RequireSsl = false,
@@ -111,9 +115,7 @@ namespace ConsegAutenticationService
                     IdentityProviders = ConfigureIdentityProviders
                 }
             };
-
             app.UseCookieAuthentication(new CookieAuthenticationOptions { AuthenticationType = "Cookies" });
-
             app.UseIdentityServer(options);
         }
 

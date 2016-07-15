@@ -26,12 +26,15 @@ namespace ConsegAutenticationService.Confg
 
                 string Name = claimsUser.Where(d=>d.IdUser == item.Id).Select(d => d.Name).SingleOrDefault().ToString();
 
+                var admin = roles.Count(d => d.IdUser == item.Id && d.Value == "Admin") == 0 ? "Nao" : "Admin";
+                var sivic = roles.Count(d => d.IdUser == item.Id && d.Value == "Sivic") == 0 ? "Nao" : "Sivic";
+                var Area = roles.Count(d => d.IdUser == item.Id && d.Value == "Area") == 0 ? "Nao" : "Area";
+
                 var InUserMemory = new InMemoryUser
                 {
                     Username = item.Username,
                     Password = item.Password,
-                    Subject = item.Subject,
-                    //Claims = (IEnumerable<Claim>)claimsUser,
+                    Subject = item.Subject,                   
                     Claims = new Claim[]
                     {
                         new Claim(Constants.ClaimTypes.Name, claimsUser.Select(d=>d.Name).SingleOrDefault().ToString()),
@@ -40,15 +43,15 @@ namespace ConsegAutenticationService.Confg
                         new Claim(Constants.ClaimTypes.Secret, claimsUser.Select(d=>d.Secret).SingleOrDefault().ToString().Sha256()),
                         new Claim(Constants.ClaimTypes.Email, claimsUser.Select(d=>d.Email).SingleOrDefault().ToString()),
                         new Claim(Constants.ClaimTypes.EmailVerified, claimsUser.Select(d=>d.EmailVerified).SingleOrDefault().ToString(),ClaimValueTypes.Boolean),
-                        new Claim(Constants.ClaimTypes.Role,"Admin"),
-                        new Claim(Constants.ClaimTypes.Role,"Sivic" ),
-                        new Claim(Constants.ClaimTypes.Role,"Area")
+                        new Claim(Constants.ClaimTypes.Role,admin),
+                        new Claim(Constants.ClaimTypes.Role,sivic),
+                        new Claim(Constants.ClaimTypes.Role,Area)
                     }
-                };              
-                InUser.Add(InUserMemory);               
+
+                };
+                InUser.Add(InUserMemory);  
             }
             return InUser;
-
-        }
+         }
     }
 }

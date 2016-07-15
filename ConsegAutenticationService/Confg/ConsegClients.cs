@@ -24,7 +24,9 @@ namespace ConsegAutenticationService.Confg
                 //var Urli = db._ClientRedirectUri.Where(d => d.Client.Id == item.Id).Select(d => d.Uri.ToString()).Single();
                 //var Urlo = db._ClientPostLogoutRedirectUri.Where(d => d.Client.Id == item.Id).Select(d => d.Uri.ToString()).Single();
 
-                if (item.ClientId == "AdminConseg" /*|| item.ClientId == "ConsegRouter"*/)
+                List<string> ListSt = db._ClientScope.Where(d => d.Client.Id == item.Id).Select(d => d.Scope).ToList<string>();
+
+                if (item.ClientId == "AdminConseg" || item.ClientId == "ConsegRouter")
                 {
 
                     clients = new Client
@@ -44,21 +46,12 @@ namespace ConsegAutenticationService.Confg
                         RedirectUris = new List<string>
                     {
                        db._ClientRedirectUri.Where(d=>d.Client.Id == item.Id).Select(d=>d.Uri.ToString()).Single(),
-
-                       //item.LogoUri.ToString(),
-                        /*"http://localhost:61218/" *//*item.RedirectUris.ToString()*/
                     },
                         PostLogoutRedirectUris = new List<string>
                     {
                         db._ClientPostLogoutRedirectUri.Where(d=>d.Client.Id == item.Id).Select(d=>d.Uri.ToString()).Single(),
-                         //item.LogoUri.ToString(),
-                       /* "http://localhost:61218/"*//*item.PostLogoutRedirectUris.ToString()*/
                     },
-                        //AllowedScopes = db._Scope.Select(d => d.Name).ToList<string>(),
-                        AllowedScopes = new List<string>
-                        {
-                           "openid", "profile", "roles", "SSP"
-                        }
+                        AllowedScopes = ListSt
                     };
                     Listclients.Add(clients);
                 }
@@ -69,37 +62,6 @@ namespace ConsegAutenticationService.Confg
 
         }
         
-        //var certClient = new Client
-        //{
-        //    ClientName = "Client Credentials Flow Client with Client Certificate",
-        //    ClientId = "certclient",
-        //    ClientSecrets = new List<Secret> { new Secret
-        //    {
-        //        Value = "61B754C541BBCFC6A45A9E9EC5E47D8702B78C29",
-        //        Type = Constants.SecretTypes.X509CertificateThumbprint,
-        //    } },
-        //    Flow = Flows.ClientCredentials,
-        //    AllowedScopes = new List<string> { "read", "write" },
-        //}
+      
     }
 }
-
-
-//static class Clients
-//{
-//    public static List<Client> Get()
-//    {
-//        return new List<Client>
-//        { // no human involved
-//            new Client
-//            {
-//                ClientName = "Silicon-only Client" ,
-//                ClientId = "silicon" ,
-//                Enabled = true ,
-//                AccessTokenType = AccessTokenType.Reference,
-//                Flow = Flows.ClientCredentials,
-//                ClientSecrets = new List < Secret > { new Secret("F621F470-9731-4A25-80EF-67A6F7C5F4B8".Sha256()) },
-//                AllowedScopes = new List < string > { "api1" }
-//            }
-//        };
-//    } }

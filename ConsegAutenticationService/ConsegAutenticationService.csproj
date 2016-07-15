@@ -484,6 +484,7 @@
     <Content Include="plugins\Originallogin.html" />
     <Content Include="Services\Content\app\logout.html" />
     <Content Include="Services\Content\app\permissions.html" />
+    <Content Include="Services\Content\app\welcome.html" />
     <Content Include="Services\Content\libs\bootstrap\custom.less" />
     <Content Include="Services\Content\libs\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Services\Content\libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
@@ -563,6 +564,18 @@
     <Content Include="Services\Content\libs\encoder\encoder.min.js" />
     <Content Include="Services\Content\libs\jquery\jquery-1.11.0.js" />
     <Content Include="Services\Content\libs\jquery\jquery-1.11.0.min.js" />
+    <Content Include="Services\DefaultViewService\PageAssets\authorizeresponse.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\checksession.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\consent.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\error.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\FormPostResponse.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\layout.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\loggedOut.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\login.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\logout.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\permissions.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\SignoutFrame.html" />
+    <Content Include="Services\DefaultViewService\PageAssets\welcome.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -574,6 +587,7 @@
     <Compile Include="Confg\ConsegScopes.cs" />
     <Compile Include="Confg\ConsegUsers.cs" />
     <Compile Include="Context\dbContext.cs" />
+    <Compile Include="Extensions\StringsExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -661,8 +675,10 @@
       <DependentUpon>201607121221173_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ScopeConfiguration\Configuration.cs" />
+    <Compile Include="Models\WelCome.cs" />
     <Compile Include="Repository\entidades\RolesAccess.cs" />
     <Compile Include="Repository\entidades\UserClaimsConseg.cs" />
+    <Compile Include="Services\AssetManager.cs" />
     <Compile Include="Services\CustomViewService.cs" />
     <Compile Include="Services\DebugLogger.cs" />
     <Compile Include="Services\UserService.cs" />

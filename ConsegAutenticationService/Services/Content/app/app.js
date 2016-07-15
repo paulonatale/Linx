@@ -8,8 +8,10 @@
 window.identityServer = (function () {
     "use strict";
 
-    var identityServer = {
-        getModel: function () {
+    var identityServer = 
+    {
+        getModel: function ()
+        {
             var modelJson = document.getElementById("modelJson");
             var encodedJson = '';
             if (typeof (modelJson.textContent) !== undefined) {
@@ -65,7 +67,8 @@ window.identityServer = (function () {
         });
     })();
 
-    (function () {
+    (function ()
+    {
         var model = identityServer.getModel();
         angular.module("app").constant("Model", model);
         if (model.autoRedirect && model.redirectUrl) {
