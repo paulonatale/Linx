@@ -1,0 +1,98 @@
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll.config
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.xml
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll.config
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Autofac.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.xml
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll.config
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.csprojResolveAssemblyReference.cache
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll.config
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Razor.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.csprojResolveAssemblyReference.cache
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll.config
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.Razor.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.csprojResolveAssemblyReference.cache
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.Domain.Core\obj\Debug\Conseg.Administracao.Domain.Core.pdb

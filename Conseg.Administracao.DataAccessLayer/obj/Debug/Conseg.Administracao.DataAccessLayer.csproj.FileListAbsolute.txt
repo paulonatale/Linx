@@ -1,0 +1,79 @@
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll.config
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.pdb
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\prnatale\Documents\Visual Studio 2015\Projects\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll.config
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Autofac.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.pdb
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\Mary S Takahashi\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll.config
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Autofac.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.pdb
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\prnatale\Desktop\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll.config
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Autofac.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.pdb
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\prnatale\Desktop\11072016\Administracao\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll.config
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.DataAccessLayer.pdb
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Autofac.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.Core.pdb
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\Conseg.Administracao.Domain.pdb
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.dll
+C:\Users\Mary S Takahashi\Desktop\LINX-PROJETOS\LINX-IMPLEMENTADO\Linx.Application\Conseg.Administracao.DataAccessLayer\obj\Debug\Conseg.Administracao.DataAccessLayer.pdb
